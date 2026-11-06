@@ -955,6 +955,11 @@ body::before {
     border: 1px solid rgba(245, 176, 65, 0.5);
     color: #f6cf92;
 }
+.status-badge.is-new {
+    background: rgba(214, 92, 255, 0.16);
+    border: 1px solid rgba(214, 92, 255, 0.55);
+    color: #e7b3ff;
+}
 
 /* ---------- Global taxonomy ---------- */
 .all-processes-grid {
@@ -1462,7 +1467,8 @@ body::before {
                 projects: [
                     { n: "INDICADORES WEB", ia: true, url: "https://indicadoressgc.commerk.com/",img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/inidcadores.png", d: "Sistema administrativo para medir, gestionar y analizar el rendimiento de la empresa mediante KPIs: recopila información de las sedes para evaluar el avance de metas y objetivos en paneles visuales." },
                     { n: "DASHBOARD CAMBIO DE CRONOGRAMAS", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20CAMBIO%20DE%20CRONOGRAMAS.png", url: "https://app.powerbi.com/view?r=eyJrIjoiYjNiZThkODEtZTAwMC00ZDI3LWE2OTQtYzE5MzM0ZmY2MTJjIiwidCI6IjFhMTQwODgwLTFkMTYtNDIyOC1iNmRkLWIyNWU2MjE3OGVhMCJ9", d: "Monitorea las modificaciones a los cronogramas de mercadeo: cambios de establecimiento, cancelaciones de turno, ajustes de horario y de productos de degustación. IA propuesta: agente que relacione cambios de actividad con su posterior cancelación e identifique motivos por incapacidades o permisos del personal de impulso." },
-                    { n: "DASHBOARD INDICADORES", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20INDICADORES.png", url: "https://app.powerbi.com/view?r=eyJrIjoiMTYxZDMyM2QtNWMyYS00NzdiLTk1MWUtM2U1MTA4YWU0NTQ5IiwidCI6IjFhMTQwODgwLTFkMTYtNDIyOC1iNmRkLWIyNWU2MjE3OGVhMCJ9", d: "Presenta el detalle y comportamiento de los indicadores de gestión por proceso, facilitando el monitoreo de resultados y el cumplimiento de objetivos estratégicos." }
+                    { n: "DASHBOARD INDICADORES", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20INDICADORES.png", url: "https://app.powerbi.com/view?r=eyJrIjoiMTYxZDMyM2QtNWMyYS00NzdiLTk1MWUtM2U1MTA4YWU0NTQ5IiwidCI6IjFhMTQwODgwLTFkMTYtNDIyOC1iNmRkLWIyNWU2MjE3OGVhMCJ9", d: "Presenta el detalle y comportamiento de los indicadores de gestión por proceso, facilitando el monitoreo de resultados y el cumplimiento de objetivos estratégicos." },
+                    { n: "AUDITORÍA COMERCIAL", ia: false, nuevo: true, stack: ["AWS", "PostgreSQL"], img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/modulo+presencia+de+marca++-+control+interno.jpg", d: "Módulo web y móvil para que los asistentes de Control Interno auditen en campo la ruta de un vendedor (TAT o preventa): el asistente elige al vendedor y verifica a sus clientes asignados. Cada auditoría queda registrada con su consecutivo (AC-0000), fecha de inicio y cierre, estado (en proceso o finalizada) y avance de clientes auditados sobre el total de la ruta. En la plataforma web se consultan todos los registros, se filtran por estado o vendedor y se descarga la información para análisis y seguimiento." }
                 ]
             },
 
@@ -1498,12 +1504,13 @@ body::before {
                     { n: "SISTEMA GESTIÓN MERCADEO", ia: false, url: "https://mercadeo.commerk.com/",img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/sgm.png", d: "Ecosistema web y móvil que centraliza la operación de mercadeo: degustaciones, aprobación de cronogramas por niveles jerárquicos, trazabilidad de botellas con códigos QR desde logística hasta impulsadoras, auditorías de control interno y consolidación de reportes por área." },
                     { n: "TRABAJO DE CAMPO (SGM)", ia: false, img:"https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/formulario.jpeg",extra: ["Google Maps"], d: "Módulo web y móvil integrado al SGM para diligenciar y dar seguimiento a los formularios de ejecución del equipo de mercadeo, reemplazando el servicio externo RSALES con una solución propia y centralizada." },
                     { n: "CUENTAS DE COBRO", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/cuentas+de+cobro.png", d: "Módulo web y móvil para crear y gestionar cuentas de cobro por turnos de impulso, con flujo de aprobación desde mercadeo hasta el área financiera para autorizar el pago." },
+                    { n: "AUDITORÍA COMERCIAL", ia: false, nuevo: true,stack: ["AWS", "PostgreSQL"], img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/modulo+presencia+de+marca++-+control+interno.jpg", d: "Módulo web y móvil para que los asistentes de Control Interno auditen en campo la ruta de un vendedor (TAT o preventa): el asistente elige al vendedor y verifica a sus clientes asignados. Cada auditoría queda registrada con su consecutivo (AC-0000), fecha de inicio y cierre, estado (en proceso o finalizada) y avance de clientes auditados sobre el total de la ruta. En la plataforma web se consultan todos los registros, se filtran por estado o vendedor y se descarga la información para análisis y seguimiento." },
                     { n: "SOLICITUD PATROCINIO", ia: false,building: true, d: "Plataforma web para recibir y gestionar solicitudes de patrocinio de clientes, con flujo de aprobación escalonado desde mercadeo hasta la validación final de Gerencia; la validación final se hace en comité de mercadeo." },
                     { n: "DASHBOARD DEGUSTACIÓN", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20DEGUSTACI%C3%93N.png", url: "https://app.powerbi.com/view?r=eyJrIjoiMDdhNjJkNDQtZGU2YS00MThiLWE2YjItMzU3YjZkNTNmZGNjIiwidCI6IjFhMTQwODgwLTFkMTYtNDIyOC1iNmRkLWIyNWU2MjE3OGVhMCJ9", d: "Trazabilidad completa de las botellas de degustación: monitorea movimientos por zona, coordinador y personal de impulso, con seguimiento del inventario en tránsito, en custodia de logística y de las botellas dadas de baja." },
                     { n: "DASHBOARD ACTIVIDADES PROGRAMADAS POR MERCADEO", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20ACTIVIDADES%20PROGRAMADAS%20POR%20MERCADEO.png", d: "Resumen semana a semana de las actividades programadas por mercadeo, con la información necesaria para programar las visitas a sitios." },
                     // { n: "DASHBOARD DE RECOLECCIÓN RESIDUOS - FUNDACIÓN NATALIA BOTERO ESCOBAR", ia: false, d: "Visualiza la recolección de residuos realizada por la Fundación Natalia Botero en el departamento del Valle." },
                     { n: "DASHBOARD R-SALES", ia: false, img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/DASHBOARD%20R-SALES.png", d: "Monitorea la presencia de marca en Valle y Antioquia mediante información de actividades; hoy usa datos de ADATEC y evolucionará hacia una integración directa con el aplicativo de gestión de mercadeo." },
-                   { n: "INFORME FINAL DE ACTIVIDADES DE IMPULSO Y DEGUSTACIÓN", ia: false, building: true, transition: true, stack: ["Power BI"], img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/INFORME-IMPULSO-DEGUSTACION.jpeg", d: "Monitorea el impacto y la presencia de marca en diferentes tipos de comercios de Valle y Antioquia mediante información recolectada directamente en las plataformas propias de gestión de mercadeo. Su estructura permitirá ampliar progresivamente las dimensiones e indicadores disponibles para el análisis." }
+                    { n: "INFORME FINAL DE ACTIVIDADES DE IMPULSO Y DEGUSTACIÓN", ia: false, building: true, transition: true, stack: ["Power BI"], img: "https://productos-commerk.s3.us-east-2.amazonaws.com/imgs/INFORME-IMPULSO-DEGUSTACION.jpeg", d: "Monitorea el impacto y la presencia de marca en diferentes tipos de comercios de Valle y Antioquia mediante información recolectada directamente en las plataformas propias de gestión de mercadeo. Su estructura permitirá ampliar progresivamente las dimensiones e indicadores disponibles para el análisis." }
                 ]
             },
             {
@@ -1832,6 +1839,7 @@ body::before {
                     ${proj.url ? `<a class="project-link" href="${proj.url}" target="_blank" rel="noopener">Abrir proyecto <span aria-hidden="true">↗</span></a>` : ''}
                     <div class="project-footer">
                         ${proj.ia ? `<div class="ia-badge">🤖 Inteligencia Artificial</div>` : ''}
+                        ${proj.nuevo ? `<div class="status-badge is-new">✨ Nuevo</div>` : ''}
                         ${proj.transition ? `<div class="status-badge is-transition">🔄 En transición</div>` : ''}
                         <div class="status-badge ${proj.building ? 'is-dev' : 'is-live'}">
                             ${proj.building ? '🚧 En construcción' : '✅ En uso'}
